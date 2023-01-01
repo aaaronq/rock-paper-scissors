@@ -1,3 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container {
     text-align: center;
+}
+
+.header {
+    background-color: #ffd700;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 70px;    
+}
+
+.gamespace {
+    background-color: #e7f7ff;
+    padding-bottom: 25.5vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 100px;
+}
+
+.flex-container button {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain; 
+}
+
+button:hover {
+    color: blueviolet;
+    border: 7px solid blueviolet;
+}
+
+.gamespace h2 {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 0;
+    font-size: 50px;
+}
+
+.gamespace h3 {
+    font-size: 30px;
+}
+
+#rock {
+    background-image: url(./Rock.png);
+    background-position: 3px 10px;
+}
+
+#paper {
+    background-image: url(./Paper.png);
+    background-position: 17px;
+}
+
+#scissors {
+    background-image: url(./Scissors.png);
+    background-position: 19px;
 }
