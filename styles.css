@@ -35,8 +35,8 @@ html, body {
     padding: 10px;
     margin-top: 100px;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     background-size: cover; 
 }
 
@@ -63,10 +63,10 @@ button:hover {
 
 #paper {
     background-image: url(./Paper.png);
-    background-position: 17px;
+    background-position: 10px;
 }
 
 #scissors {
     background-image: url(./Scissors.png);
-    background-position: 19px;
+    background-position: 15px;
 }

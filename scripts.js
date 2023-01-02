@@ -87,8 +87,11 @@ let wins = 0;
 let losses = 0;
 
 function changeScore(status) {
+    console.log(status)
     statusText = document.getElementById("status");
     statusText.innerText = status;
+
+    if(status === "Tie") return;
 
     if(status === "Win") wins++;
     if(status === "Loss") losses++;
@@ -112,29 +115,36 @@ function playRound(playerSelection, computerSelection) {
     console.log(playerSelection + " vs " + computerSelection)
     if (playerSelection === computerSelection) {
         changeScore("Tie");
+        return;
     }
     if (playerSelection === "rock") {
         if (computerSelection === "scissors") {
             changeScore("Win");
+            return;
         }
         else {
             changeScore("Loss");
+            return;
         }
     }
     else if (playerSelection === "scissors") {
         if (computerSelection === "paper") {
             changeScore("Win");
+            return;
         }
         else {
             changeScore("Loss")
+            return;
         }
     }
     else {
         if (computerSelection === "rock") {
             changeScore("Win")
+            return;
         }
         else {
             changeScore("Loss")
+            return;
         }
     }
     
